@@ -541,7 +541,7 @@ output.elasticsearch:
   # In case you specify and additional path, the scheme is required: `http://localhost:9200/path`.
   # IPv6 addresses should always be defined as: `https://[2001:db8::1]:9200`.
   #hosts: [${ELASTICSEARCH_HOST}]
-  hosts: ["http://dev.elasticsearch.apps.okd.leanovia.net/"]
+  hosts: ["http://dev.elasticsearch.apps.okd.leanovia.net:80"]
 
   # Boolean flag to enable or disable the output module.
   #enabled: true
