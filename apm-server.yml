@@ -540,7 +540,8 @@ output.elasticsearch:
   # Scheme and port can be left out and will be set to the default (`http` and `9200`).
   # In case you specify and additional path, the scheme is required: `http://localhost:9200/path`.
   # IPv6 addresses should always be defined as: `https://[2001:db8::1]:9200`.
-  hosts: [${ELASTICSEARCH_HOST}]
+  #hosts: [${ELASTICSEARCH_HOST}]
+  hosts: ["http://dev.elasticsearch.apps.okd.leanovia.net/"]
 
   # Boolean flag to enable or disable the output module.
   #enabled: true
@@ -553,8 +554,8 @@ output.elasticsearch:
 
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
-  username: ${ELASTICSEARCH_USERNAME:elastic}
-  password: ${ELASTICSEARCH_PASSWORD:pass4elastic}
+  ####username: ${ELASTICSEARCH_USERNAME:elastic}
+  ####password: ${ELASTICSEARCH_PASSWORD:pass4elastic}
 
   # Dictionary of HTTP parameters to pass within the url with index operations.
   #parameters:
